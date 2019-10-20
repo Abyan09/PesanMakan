@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.MenuPesanFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nama Pemesan"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Makanan"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNama" />
+
+    <TextView
+        android:id="@+id/textMinuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Minuman"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textJumlah" />
+
+    <RadioGroup
+        android:id="@+id/GroupMinuman"
+        android:layout_width="123dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/outJumlah1">
+
+        <RadioButton
+            android:id="@+id/Teh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Es Teh"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+        <RadioButton
+            android:id="@+id/Jeruk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Es Jeruk"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+        <RadioButton
+            android:id="@+id/Milo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Milo"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="327dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/GroupMakanan"
+        android:layout_width="132dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/TextNama">
+
+        <RadioButton
+            android:id="@+id/Pecel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pecel Madiun" />
+
+        <RadioButton
+            android:id="@+id/Geprek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Geprek" />
+
+        <RadioButton
+            android:id="@+id/Nasgor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nasi Goreng" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="114dp" />
+
+    <EditText
+        android:id="@+id/TextNama"
+        android:layout_width="124dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textJumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="37dp"
+        android:text="Jumlah"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMakanan" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="26dp"
+        android:text="Jumlah"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMinuman" />
+
+    <Button
+        android:id="@+id/buttonPesanMk"
+        android:layout_width="301dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="11dp"
+        android:text="Pesan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outMeja" />
+
+    <EditText
+        android:id="@+id/outJumlah1"
+        android:layout_width="97dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="59dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/GroupMakanan" />
+
+    <EditText
+        android:id="@+id/outJumlah2"
+        android:layout_width="95dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="61dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/GroupMinuman" />
+
+    <TextView
+        android:id="@+id/txt_Meja"
+        android:layout_width="79dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="11dp"
+        android:text="Meja Untuk"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/outMeja"
+        android:layout_width="102dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="69dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/outJumlah2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
